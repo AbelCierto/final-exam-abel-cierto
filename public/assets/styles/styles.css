@@ -1,0 +1,420 @@
+/*Common Fonts Import*/
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+/* General Common Styles */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth !important;
+}
+body{
+    margin:0;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+a.btn {
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: #000;
+    font-weight: 800;
+    text-align: center;
+}
+h1{font-size:3.5em;}
+h2{font-size:2.7em;}
+h3{font-size:2em;}
+p{font-size: 1.25em;}
+ul{list-style:none}
+li{font-size:1.25em}
+button{
+    font-family: Poppins;
+    font-size:1.5em;
+    font-weight:bold;
+    padding:10px 30px;
+    border-radius:10px;
+    border:2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: gray;
+}
+button:hover{
+    background-color: rgb(101,33,165);
+}
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+/*Header Section*/
+header{
+    background-color: rgb(245,245,245);
+}
+header .logo{
+    margin: 0;
+    padding: 0px 0px;
+    height: 10%;
+    width: 25%;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    font-size: 25px;
+}
+
+header a:hover{
+    color:blueviolet;
+}
+/*Section Home*/
+#hero {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction:column;
+    height: 90vh;
+    color:white;
+    background-image: linear-gradient(
+            0deg,rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color:white;
+}
+#hero h2{
+    color:white;
+    font-size: 2.5vw;
+    text-align: center;
+    justify-content: center;
+}
+#hero .gato{
+    flex-direction: column;
+    height: 20vh;
+    width: 30vh;
+    padding: 0px 10px;
+}
+#hero .hombre{
+    flex-direction: column;
+    height: 20vh;
+    width: 30vh;
+    padding: 0px 10px;
+}
+
+#hero .balcon{
+    flex-direction: column;
+    height: 20vh;
+    width: 30vh;
+    padding: 0px 10px;
+}
+
+/*Section requisitos para postular*/
+#requisitos{
+    background-color: rgb(30,30,30);
+    color:white;
+    text-align: center;
+    font-family: Poppins;
+
+}
+requisitos .container{
+    padding: 150px 12px;
+}
+#requisitos h2{
+    margin-top:0;
+    font-size:3.2em;
+}
+
+#requisitos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding:   50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgb(0,0,0,0.5)
+    );
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgb(0,0,0,0.5)
+    );
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgb(0,0,0,0.5)
+    );
+}
+
+/*section PostulaYa!*/
+
+#postulaYa .texto{
+    font-family: Lato;
+    font-color: black;
+}
+#postulaYa .formulario{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding:20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+    position: relative;
+    font-size:1.3em;
+    flex-direction: row;
+}
+
+#postulaYa .formulario__input{
+    padding: 20px;
+    background: rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+}
+
+#quienes-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color:white;
+    height: 80vh;
+}
+#quienes-somos h2{
+    font-size:9vw;
+}
+#quienes-somos button{
+    font-size: 5vw;
+}
+/*footer section*/
+footer{
+    background-color: #414A4F;
+    font-family: Poppins;
+}
+footer .container p{
+    margin:0;
+    padding:12px;
+    color: rgb(100,100,100);
+}
+footer .container{
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color:#fff;
+    padding: 60px 0;
+}
+footer .container ul{
+    display: flex;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+footer .container ul li{
+    margin: 0 8px;
+    color: gray;
+}
+footer .container ul li:first-child{
+    margin-left: 0;
+}
+footer .container ul li:last-child{
+    margin-right:0;
+}
+footer .container p{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 10px;
+}
+footer .container p a{
+    color: #FFF;
+}
+
+@media(min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+    #hero h2{
+        font-size: 2em;
+        justify-content: center;
+    }
+    #hero .image-container{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+    #postulaYa .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #postulaYa .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2em;
+    }
+    #postulaYa .formulario{
+        width: 500px;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 30px;
+        padding:20px;
+        box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+        position: relative;
+        font-size:1.3em;
+        flex-direction: row;
+    }
+
+    #postulaYa .formulario__input{
+        padding: 20px;
+        background: rgba(0,0,0,0.1);
+        border: 1px solid rgba(0,0,0,0.3);
+        margin-bottom: 40px;
+    }
+    #postulaYa .btn{
+        padding: 18px 42px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        background-color: black;
+        color:white;
+        font-weight: bold;
+        text-align: center;
+    }
+    #postulaYa .formulario__input{
+        padding: 20px;
+        background: rgba(0,0,0,0.1);
+        border: 1px solid rgba(0,0,0,0.3);
+        margin-bottom: 40px;
+    }
+
+    #postulaYa .formulario__submit{
+        background: rgba(0,0,0,0.7);
+        color:white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border:none;
+    }
+
+    .fijar{
+        margin-top: -135px;
+    }
+    #postulaYa h2{
+        margin-top: 0px;
+    }
+    #postulaYa .img-container{
+        margin-top: 200px;
+        background-image: url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzYXJyb2xsYWRvciUyMGZyb250ZW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    #requisitos .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #requisitos p{
+        display:block;
+        margin-bottom: 30px;
+    }
+    #requisitos h3{
+        margin-top: 0;
+    }
+    #requisitos .carta{
+        padding: 50px;
+        background-size: 100% 150%;
+        background-repeat: no-repeat;
+        background-position-y:0;
+        background-color: rgba(50,50,50,1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    .carta:first-child{
+        background-image: linear-gradient(
+                0deg,
+                rgb(0,0,0,0.5),
+                rgb(0,0,0,0.5)
+        )
+        ,url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzYXJyb2xsYWRvciUyMGZyb250ZW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+                0deg,
+                rgb(0,0,0,0.5),
+                rgb(0,0,0,0.5)
+        )
+        ,url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzYXJyb2xsYWRvciUyMGZyb250ZW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    }
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+                0deg,
+                rgb(0,0,0,0.5),
+                rgb(0,0,0,0.5)
+        )
+        ,url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzYXJyb2xsYWRvciUyMGZyb250ZW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    }
+    #quienes-somos h2{
+        font-size:4em;
+    }
+    #quienes-somos .btn{
+        font-size: 2em;
+
+    }
+}
+@media (max-width: 700px)
+{
+    footer{
+        padding: 80px 15px;
+    }
+}
