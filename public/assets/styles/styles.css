@@ -1,6 +1,6 @@
 /*Common Fonts Import*/
 @import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
 /* General Common Styles */
 *{
     box-sizing: border-box;
@@ -34,7 +34,7 @@ p{font-size: 1.25em;}
 ul{list-style:none}
 li{font-size:1.25em}
 button{
-    font-family: Poppins;
+    font-family: Outfit;
     font-size:1.5em;
     font-weight:bold;
     padding:10px 30px;
@@ -54,7 +54,7 @@ button:hover{
 
 /*Header Section*/
 header{
-    background-color: rgb(245,245,245);
+    background-color: #f0f1f4;
 }
 header .logo{
     margin: 0;
@@ -81,6 +81,7 @@ header a{
     font-weight: bold;
     color:black;
     font-size: 25px;
+    font-family: Hepta Slap;
 }
 
 header a:hover{
@@ -88,6 +89,122 @@ header a:hover{
 }
 /*Section Home*/
 #hero {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction:column;
+    height: 90vh;
+    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color:white;
+    font-family: Outfit;
+    color:#4e2b23;
+}
+#hero h2{
+    color:white;
+    font-size: 2.5vw;
+    text-align: center;
+    justify-content: center;
+    font-family: Hepta Slap;
+    color: #702619;
+}
+#hero .playstore{
+    flex-direction: column;
+    position: relative;
+    height: 20vh;
+    width: 40vh;
+    padding: 0px 10px;
+}
+#hero .appstore{
+    flex-direction: column;
+    height: 15vh;
+    width: 40vh;
+    padding: 0px 10px;
+}
+#hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color:  #f0f1f4;
+    z-index: -1;
+}
+/*Section caracteristicas de la app*/
+#caracteristicas{
+    background-color: rgb(30,30,30);
+    color:white;
+    text-align: center;
+    font-family: Poppins;
+
+}
+caracteristicas .container{
+    padding: 150px 12px;
+}
+#caracteristicas h2{
+    margin-top:0;
+    font-size:3.2em;
+}
+
+#caracteristicas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding:   50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgb(0,0,0,0.5)
+    );
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgb(0,0,0,0.5)
+    );
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgb(0,0,0,0.5)
+    );
+}
+#caracteristicas h1{
+    color:white;
+    font-family: Outfit;
+    color:#4e2b23;
+}
+#caracteristicas h2{
+    color:white;
+    font-size: 2.5vw;
+    text-align: center;
+    justify-content: center;
+    font-family: Hepta Slap;
+    color: #702619;
+}
+#caracteristicas p{
+    color:white;
+    font-size: 1.3vw;
+    text-align: center;
+    justify-content: center;
+    font-family: Hepta Slap;
+    color: white;
+}
+/*section aliados de la app running artist*/
+
+#aliados {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -104,52 +221,69 @@ header a:hover{
     background-position: center center;
 }
 
-#hero h1{
+#aliados h1{
     color:white;
+    font-family: Outfit;
+    color:#4e2b23;
 }
-#hero h2{
+#aliados h2{
     color:white;
     font-size: 2.5vw;
     text-align: center;
     justify-content: center;
+    font-family: Hepta Slap;
+    color: #702619;
 }
-#hero .gato{
+#aliados .adidas{
     flex-direction: column;
+    position: relative;
     height: 20vh;
-    width: 30vh;
+    width: 40vh;
     padding: 0px 10px;
 }
-#hero .hombre{
+#aliados .nike{
     flex-direction: column;
+    position: relative;
     height: 20vh;
-    width: 30vh;
+    width: 40vh;
     padding: 0px 10px;
 }
-
-#hero .balcon{
+#aliados .organic{
     flex-direction: column;
+    position: relative;
     height: 20vh;
-    width: 30vh;
+    width: 40vh;
     padding: 0px 10px;
 }
-
-/*Section requisitos para postular*/
-#requisitos{
+#aliados .background-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 50%;
+    background-size: cover;
+    background-color:  #f0f1f4;
+    z-index: -1;
+    margin: 0 0 0 0;
+}
+/*Section Planes y precios */
+#planes-precios{
     background-color: rgb(30,30,30);
     color:white;
     text-align: center;
     font-family: Poppins;
 
 }
-requisitos .container{
+planes-precios .container{
     padding: 150px 12px;
 }
-#requisitos h2{
+#planes-precios h2{
     margin-top:0;
     font-size:3.2em;
+    color: #702619;
 }
 
-#requisitos .carta{
+#planes-precios .carta{
     background-position: center center;
     background-size: cover;
     padding:   50px;
@@ -178,51 +312,11 @@ requisitos .container{
     );
 }
 
-/*section PostulaYa!*/
-
-#postulaYa .texto{
-    font-family: Lato;
-    font-color: black;
-}
-#postulaYa .formulario{
-    width: 500px;
-    max-width: 100%;
-    margin: auto;
-    margin-top: 30px;
-    padding:20px;
-    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
-    position: relative;
-    font-size:1.3em;
-    flex-direction: row;
-}
-
-#postulaYa .formulario__input{
-    padding: 20px;
-    background: rgba(0,0,0,0.1);
-    border: 1px solid rgba(0,0,0,0.3);
-    margin-bottom: 40px;
-}
-
-#quienes-somos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(30,30,30);
-    color:white;
-    height: 80vh;
-}
-#quienes-somos h2{
-    font-size:9vw;
-}
-#quienes-somos button{
-    font-size: 5vw;
-}
 /*footer section*/
 footer{
     background-color: #414A4F;
-    font-family: Poppins;
+    font-family: Outfit;
+    color:white;
 }
 footer .container p{
     margin:0;
@@ -244,9 +338,9 @@ footer .container ul{
     margin-bottom: 25px;
     font-size: 32px;
 }
-footer .container ul li{
+footer .container ul li i{
     margin: 0 8px;
-    color: gray;
+    color:  #4e2b23;
 }
 footer .container ul li:first-child{
     margin-left: 0;
@@ -291,88 +385,20 @@ footer .container p a{
         justify-content: space-between;
         margin-top: 100px;
     }
-    #postulaYa .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    #postulaYa .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 2em;
-    }
-    #postulaYa .formulario{
-        width: 500px;
-        max-width: 100%;
-        margin: auto;
-        margin-top: 30px;
-        padding:20px;
-        box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
-        position: relative;
-        font-size:1.3em;
-        flex-direction: row;
-    }
 
-    #postulaYa .formulario__input{
-        padding: 20px;
-        background: rgba(0,0,0,0.1);
-        border: 1px solid rgba(0,0,0,0.3);
-        margin-bottom: 40px;
-    }
-    #postulaYa .btn{
-        padding: 18px 42px;
-        border-radius: 4px;
-        text-transform: uppercase;
-        background-color: black;
-        color:white;
-        font-weight: bold;
-        text-align: center;
-    }
-    #postulaYa .formulario__input{
-        padding: 20px;
-        background: rgba(0,0,0,0.1);
-        border: 1px solid rgba(0,0,0,0.3);
-        margin-bottom: 40px;
-    }
 
-    #postulaYa .formulario__submit{
-        background: rgba(0,0,0,0.7);
-        color:white;
-        padding: 10px 20px;
-        cursor: pointer;
-        border:none;
-    }
-
-    .fijar{
-        margin-top: -135px;
-    }
-    #postulaYa h2{
-        margin-top: 0px;
-    }
-    #postulaYa .img-container{
-        margin-top: 200px;
-        background-image: url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzYXJyb2xsYWRvciUyMGZyb250ZW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 400px;
-    }
-    #requisitos .programas{
+    #caracteristicas .programas{
         display: flex;
         justify-content: center;
     }
-    #requisitos p{
+    #caracteristicas p{
         display:block;
         margin-bottom: 30px;
     }
-    #requisitos h3{
+    #caracteristicas h3{
         margin-top: 0;
     }
-    #requisitos .carta{
+    #caracteristicas .carta{
         padding: 50px;
         background-size: 100% 150%;
         background-repeat: no-repeat;
@@ -386,7 +412,7 @@ footer .container p a{
                 rgb(0,0,0,0.5),
                 rgb(0,0,0,0.5)
         )
-        ,url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzYXJyb2xsYWRvciUyMGZyb250ZW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+        ,url("https://images.pexels.com/photos/8381737/pexels-photo-8381737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     }
     .carta:nth-child(2){
         background-image: linear-gradient(
@@ -394,7 +420,7 @@ footer .container p a{
                 rgb(0,0,0,0.5),
                 rgb(0,0,0,0.5)
         )
-        ,url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzYXJyb2xsYWRvciUyMGZyb250ZW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+        ,url("https://images.pexels.com/photos/159752/pencil-office-design-creative-159752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     }
     .carta:nth-child(3){
         background-image: linear-gradient(
@@ -402,15 +428,53 @@ footer .container p a{
                 rgb(0,0,0,0.5),
                 rgb(0,0,0,0.5)
         )
-        ,url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzYXJyb2xsYWRvciUyMGZyb250ZW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+        ,url("https://images.pexels.com/photos/34495/runner-race-competition-female.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     }
-    #quienes-somos h2{
-        font-size:4em;
-    }
-    #quienes-somos .btn{
-        font-size: 2em;
 
+    #planes-precios .programas{
+        display: flex;
+        justify-content: center;
     }
+    #planes-precios p{
+        display:block;
+        margin-bottom: 30px;
+    }
+    #planes-precios h3{
+        margin-top: 0;
+    }
+    #planes-precios .carta{
+        padding: 50px;
+        background-size: 100% 150%;
+        background-repeat: no-repeat;
+        background-position-y:0;
+        background-color: rgba(50,50,50,1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    .carta:first-child{
+        background-image: linear-gradient(
+                0deg,
+                rgb(0,0,0,0.5),
+                rgb(0,0,0,0.5)
+        )
+        ,url("https://images.pexels.com/photos/8381737/pexels-photo-8381737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+                0deg,
+                rgb(0,0,0,0.5),
+                rgb(0,0,0,0.5)
+        )
+        ,url("https://images.pexels.com/photos/159752/pencil-office-design-creative-159752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+                0deg,
+                rgb(0,0,0,0.5),
+                rgb(0,0,0,0.5)
+        )
+        ,url("https://images.pexels.com/photos/34495/runner-race-competition-female.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+
 }
 @media (max-width: 700px)
 {
